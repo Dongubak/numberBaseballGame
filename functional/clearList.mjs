@@ -3,7 +3,6 @@ import init from "./init.mjs";
 
 function clearList() {
   const ul = getDOM("#validated_result");
-  console.log(ul.childNodes);
   [...ul.childNodes].forEach((e) => {
     ul.removeChild(e);
   });

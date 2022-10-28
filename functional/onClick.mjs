@@ -11,10 +11,6 @@ function onClick(event, initialNumber) {
 
   if (isValidInputValue(inputValue)) {
     const validatedValue = isValidNumber(initialNumber, inputValue);
-    console.log(`initial number : ${initialNumber}`);
-    console.log(
-      `validated value : ${isValidNumber(initialNumber, inputValue)}`
-    );
     validatedValue !== "correct"
       ? addResult(validatedValue, inputValue)
       : clearList();
